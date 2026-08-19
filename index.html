@@ -1,0 +1,377 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anil Nagane | Finance & Automation Professional</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 22px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            min-height: 560px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+            padding: 70px 8%;
+            background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+        }
+
+        .hero-text {
+            max-width: 650px;
+        }
+
+        .hero-text .welcome {
+            color: #2563eb;
+            font-weight: bold;
+            font-size: 17px;
+            letter-spacing: 1px;
+        }
+
+        .hero-text h1 {
+            font-size: 52px;
+            margin: 15px 0 10px;
+            color: #0f172a;
+        }
+
+        .hero-text h2 {
+            font-size: 28px;
+            color: #2563eb;
+            margin: 0 0 20px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #475569;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 23px;
+            margin-right: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .primary {
+            background: #2563eb;
+            color: white;
+        }
+
+        .primary:hover {
+            background: #1d4ed8;
+        }
+
+        .secondary {
+            border: 2px solid #2563eb;
+            color: #2563eb;
+        }
+
+        .secondary:hover {
+            background: #2563eb;
+            color: white;
+        }
+
+        .profile-card {
+            width: 330px;
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+        }
+
+        .profile-icon {
+            width: 120px;
+            height: 120px;
+            margin: auto;
+            border-radius: 50%;
+            background: #dbeafe;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 55px;
+        }
+
+        .profile-card h3 {
+            font-size: 23px;
+            color: #0f172a;
+            margin-bottom: 8px;
+        }
+
+        .profile-card p {
+            color: #64748b;
+            line-height: 1.5;
+        }
+
+        .skills-section {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .skills-section h2 {
+            font-size: 32px;
+            color: #0f172a;
+        }
+
+        .skills-section p {
+            color: #64748b;
+            margin-bottom: 30px;
+        }
+
+        .skill-boxes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 18px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .skill-box {
+            background: white;
+            padding: 22px;
+            border-radius: 12px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.07);
+            font-weight: bold;
+            color: #0f172a;
+        }
+
+        .cta {
+            text-align: center;
+            padding: 60px 20px;
+            background: #0f172a;
+            color: white;
+        }
+
+        .cta h2 {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .cta p {
+            color: #cbd5e1;
+            margin-bottom: 25px;
+        }
+
+        .cta .btn {
+            background: #2563eb;
+            color: white;
+        }
+
+        footer {
+            background: #020617;
+            color: #94a3b8;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 800px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 50px 20px;
+            }
+
+            .hero-text h1 {
+                font-size: 40px;
+            }
+
+            .hero-text h2 {
+                font-size: 23px;
+            }
+
+            .profile-card {
+                width: 90%;
+                max-width: 330px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        Anil Nagane
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <div class="welcome">
+            WELCOME TO MY PROFESSIONAL WEBSITE
+        </div>
+
+        <h1>Hi, I'm Anil Nagane</h1>
+
+        <h2>Finance & Automation Professional</h2>
+
+        <p>
+            I specialize in Finance, Record to Report (R2R),
+            Management Reporting, Business Intelligence and
+            Process Automation.
+        </p>
+
+        <p>
+            My technical expertise includes Power BI, Advanced Excel,
+            VBA, SQL, Power Query, DAX and Power Automate.
+        </p>
+
+        <div class="buttons">
+
+            <a href="experience.html" class="btn primary">
+                View My Experience
+            </a>
+
+            <a href="contact.html" class="btn secondary">
+                Contact Me
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="profile-card">
+
+        <div class="profile-icon">
+            👨‍💼
+        </div>
+
+        <h3>Finance + Technology</h3>
+
+        <p>
+            Turning financial data into meaningful insights
+            and automating repetitive business processes.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="skills-section">
+
+    <h2>Core Expertise</h2>
+
+    <p>
+        Finance knowledge combined with technology and automation
+    </p>
+
+    <div class="skill-boxes">
+
+        <div class="skill-box">📊 Power BI</div>
+
+        <div class="skill-box">📗 Advanced Excel</div>
+
+        <div class="skill-box">⚙️ VBA & Macros</div>
+
+        <div class="skill-box">🗄️ SQL</div>
+
+        <div class="skill-box">🔄 Power Automate</div>
+
+        <div class="skill-box">📈 DAX</div>
+
+        <div class="skill-box">🏢 SAP</div>
+
+        <div class="skill-box">💰 R2R Finance</div>
+
+    </div>
+
+</section>
+
+
+<section class="cta">
+
+    <h2>Let's Connect</h2>
+
+    <p>
+        Interested in professional opportunities,
+        collaboration or automation projects?
+    </p>
+
+    <a href="contact.html" class="btn">
+        Get In Touch
+    </a>
+
+</section>
+
+
+<footer>
+
+    <p>
+        © 2026 Anil Nagane | Finance & Automation Professional
+    </p>
+
+</footer>
+
+</body>
+</html>
+```
