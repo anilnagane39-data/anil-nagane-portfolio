@@ -1,0 +1,408 @@
+/* =========================================
+   TRADING APP - GLOBAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #172033;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.navbar {
+    width: 100%;
+    min-height: 70px;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e9f0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #123c69;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #374151;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #0b7dda;
+}
+
+
+/* =========================================
+   DASHBOARD HEADER
+========================================= */
+
+.dashboard-header {
+    background: linear-gradient(135deg, #123c69, #0b7dda);
+    color: white;
+    padding: 45px 6%;
+}
+
+.dashboard-header h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.dashboard-header p {
+    font-size: 17px;
+    opacity: 0.9;
+}
+
+.market-status {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.dashboard-container {
+    width: 88%;
+    max-width: 1400px;
+    margin: 35px auto;
+}
+
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.section-title {
+    margin-bottom: 20px;
+}
+
+.section-title h2 {
+    font-size: 25px;
+    color: #172033;
+}
+
+.section-title p {
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+
+/* =========================================
+   KPI CARDS
+========================================= */
+
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-bottom: 45px;
+}
+
+.kpi-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid #e5e9f0;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.kpi-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.kpi-icon {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.kpi-card h3 {
+    font-size: 15px;
+    color: #6b7280;
+    margin-bottom: 6px;
+}
+
+.kpi-card h2 {
+    font-size: 28px;
+    color: #172033;
+}
+
+.kpi-card p {
+    margin-top: 5px;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   PROJECT / MARKET CARDS
+========================================= */
+
+.projects-section {
+    margin-bottom: 45px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    background: #ffffff;
+    padding: 22px;
+    border-radius: 14px;
+    border: 1px solid #e5e9f0;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+}
+
+.project-card h3 {
+    color: #123c69;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.project-card p {
+    color: #5b6472;
+    margin-bottom: 7px;
+}
+
+.project-card strong {
+    color: #172033;
+}
+
+
+/* =========================================
+   TECHNOLOGY / ANALYSIS CARDS
+========================================= */
+
+.technology-section {
+    margin-bottom: 45px;
+}
+
+.technology-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.technology-card {
+    background: #ffffff;
+    padding: 22px;
+    border-radius: 14px;
+    border: 1px solid #e5e9f0;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+}
+
+.technology-card h3 {
+    color: #6b7280;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.technology-card p {
+    font-size: 21px;
+    font-weight: 700;
+    color: #123c69;
+}
+
+
+/* =========================================
+   PAPER TRADING INPUTS
+========================================= */
+
+.project-card input {
+    width: 100%;
+    padding: 11px 12px;
+    margin-top: 5px;
+    border: 1px solid #d5dbe5;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    background: #fafbfc;
+}
+
+.project-card input:focus {
+    border-color: #0b7dda;
+    box-shadow: 0 0 0 3px rgba(11, 125, 218, 0.1);
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.btn {
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    background: #0b7dda;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #075fa8;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   PAPER TRADE RESULT
+========================================= */
+
+.paper-result {
+    margin-top: 20px;
+}
+
+#tradeResult {
+    margin-top: 18px;
+    padding: 15px;
+    background: #f4f7fb;
+    border-radius: 8px;
+    color: #374151;
+}
+
+
+/* =========================================
+   POSITIONS
+========================================= */
+
+#positionsContainer {
+    background: #ffffff;
+    padding: 22px;
+    border-radius: 14px;
+    border: 1px solid #e5e9f0;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    margin-top: 60px;
+    padding: 25px;
+    text-align: center;
+    background: #123c69;
+    color: white;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .technology-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .kpi-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+        padding: 18px;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .dashboard-header {
+        padding: 35px 6%;
+    }
+
+    .dashboard-header h1 {
+        font-size: 28px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .technology-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-container {
+        width: 92%;
+    }
+
+}
+
+/* =========================================
+   TRADING FORM
+========================================= */
+
+.project-card select {
+    width: 100%;
+    padding: 11px 12px;
+    margin-top: 5px;
+    border: 1px solid #d5dbe5;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    background: #fafbfc;
+    cursor: pointer;
+}
+
+.project-card select:focus {
+    border-color: #0b7dda;
+    box-shadow: 0 0 0 3px rgba(11, 125, 218, 0.1);
+}
