@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trading Dashboard | Anil Nagane</title>
+
+    <link rel="stylesheet" href="trading.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         NAVIGATION
+    ========================================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                Anil Nagane
+            </div>
+
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="../index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../about.html">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../skills.html">
+                        Skills
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../experience.html">
+                        Experience
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../contact.html">
+                        Contact
+                    </a>
+                </li>
+
+                <li>
+                    <a href="dashboard.html" class="active">
+                        Trading
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================================
+         DASHBOARD HEADER
+    ========================================= -->
+
+    <section class="dashboard-header">
+
+        <h1>
+            Trading Dashboard
+        </h1>
+
+        <p>
+            Market Analysis & Paper Trading Platform
+        </p>
+
+
+        <div class="market-status">
+
+            ● Market Status:
+
+            <strong id="marketStatus">
+                Checking...
+            </strong>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         MAIN DASHBOARD
+    ========================================= -->
+
+    <main class="dashboard-container">
+
+
+
+        <!-- =========================================
+             MARKET INDEX CARDS
+        ========================================= -->
+
+        <section class="kpi-grid">
+
+
+            <!-- NIFTY -->
+
+            <div class="kpi-card">
+
+                <div class="kpi-icon">
+                    📈
+                </div>
+
+                <h3>
+                    NIFTY 50
+                </h3>
+
+                <h2 id="niftyPrice">
+                    25,000
+                </h2>
+
+                <p id="niftyChange">
+                    +0.00%
+                </p>
+
+            </div>
+
+
+
+            <!-- BANK NIFTY -->
+
+            <div class="kpi-card">
+
+                <div class="kpi-icon">
+                    📊
+                </div>
+
+                <h3>
+                    BANK NIFTY
+                </h3>
+
+                <h2 id="bankNiftyPrice">
+                    55,000
+                </h2>
+
+                <p id="bankNiftyChange">
+                    +0.00%
+                </p>
+
+            </div>
+
+
+
+            <!-- SENSEX -->
+
+            <div class="kpi-card">
+
+                <div class="kpi-icon">
+                    💹
+                </div>
+
+                <h3>
+                    SENSEX
+                </h3>
+
+                <h2 id="sensexPrice">
+                    82,000
+                </h2>
+
+                <p id="sensexChange">
+                    +0.00%
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+
+
+        <!-- =========================================
+             MARKET WATCH
+        ========================================= -->
+
+        <section class="projects-section">
+
+
+            <div class="section-title">
+
+                <h2>
+                    Market Watch
+                </h2>
+
+                <p>
+                    Track selected stocks
+                </p>
+
+            </div>
+
+
+
+            <div class="project-grid">
+
+
+                <!-- RELIANCE -->
+
+                <div class="project-card">
+
+                    <h3>
+                        RELIANCE
+                    </h3>
+
+                    <p>
+
+                        Price:
+
+                        <strong id="reliancePrice">
+                            ₹1,400
+                        </strong>
+
+                    </p>
+
+                    <p>
+
+                        Change:
+
+                        <span id="relianceChange">
+                            +0.00%
+                        </span>
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- TCS -->
+
+                <div class="project-card">
+
+                    <h3>
+                        TCS
+                    </h3>
+
+                    <p>
+
+                        Price:
+
+                        <strong id="tcsPrice">
+                            ₹3,200
+                        </strong>
+
+                    </p>
+
+                    <p>
+
+                        Change:
+
+                        <span id="tcsChange">
+                            +0.00%
+                        </span>
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- INFY -->
+
+                <div class="project-card">
+
+                    <h3>
+                        INFY
+                    </h3>
+
+                    <p>
+
+                        Price:
+
+                        <strong id="infyPrice">
+                            ₹1,500
+                        </strong>
+
+                    </p>
+
+                    <p>
+
+                        Change:
+
+                        <span id="infyChange">
+                            +0.00%
+                        </span>
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- HDFC -->
+
+                <div class="project-card">
+
+                    <h3>
+                        HDFCBANK
+                    </h3>
+
+                    <p>
+
+                        Price:
+
+                        <strong id="hdfcPrice">
+                            ₹1,000
+                        </strong>
+
+                    </p>
+
+                    <p>
+
+                        Change:
+
+                        <span id="hdfcChange">
+                            +0.00%
+                        </span>
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+
+        <!-- =========================================
+             STOCK ANALYSIS
+        ========================================= -->
+
+        <section class="technology-section">
+
+
+            <div class="section-title">
+
+                <h2>
+                    Stock Analysis
+                </h2>
+
+                <p>
+                    Technical analysis for trading decisions
+                </p>
+
+            </div>
+
+
+
+            <div class="technology-grid">
+
+
+                <!-- TREND -->
+
+                <div class="technology-card">
+
+                    <h3>
+                        Trend
+                    </h3>
+
+                    <p id="trendValue">
+                        Bullish
+                    </p>
+
+                </div>
+
+
+
+                <!-- RSI -->
+
+                <div class="technology-card">
+
+                    <h3>
+                        RSI
+                    </h3>
+
+                    <p id="rsiValue">
+                        55
+                    </p>
+
+                </div>
+
+
+
+                <!-- SUPPORT -->
+
+                <div class="technology-card">
+
+                    <h3>
+                        Support
+                    </h3>
+
+                    <p id="supportValue">
+                        ₹1,380
+                    </p>
+
+                </div>
+
+
+
+                <!-- RESISTANCE -->
+
+                <div class="technology-card">
+
+                    <h3>
+                        Resistance
+                    </h3>
+
+                    <p id="resistanceValue">
+                        ₹1,450
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+
+        <!-- =========================================
+             PAPER TRADING
+        ========================================= -->
+
+        <section class="projects-section">
+
+
+            <div class="section-title">
+
+                <h2>
+                    Paper Trading
+                </h2>
+
+                <p>
+                    Simulate BUY / SELL trades without real money
+                </p>
+
+            </div>
+
+
+
+            <div class="project-grid">
+
+
+                <!-- STOCK -->
+
+                <div class="project-card">
+
+                    <h3>
+                        Stock
+                    </h3>
+
+                    <select id="stockName">
+
+                        <option value="RELIANCE">
+                            RELIANCE
+                        </option>
+
+                        <option value="TCS">
+                            TCS
+                        </option>
+
+                        <option value="INFY">
+                            INFY
+                        </option>
+
+                        <option value="HDFCBANK">
+                            HDFCBANK
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- TRADE TYPE -->
+
+                <div class="project-card">
+
+                    <h3>
+                        Trade Type
+                    </h3>
+
+                    <select id="tradeType">
+
+                        <option value="BUY">
+                            BUY
+                        </option>
+
+                        <option value="SELL">
+                            SELL
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- ENTRY PRICE -->
+
+                <div class="project-card">
+
+                    <h3>
+                        Entry Price
+                    </h3>
+
+                    <input
+                        type="number"
+                        id="entryPrice"
+                        placeholder="Enter Entry Price"
+                    >
+
+                </div>
+
+
+
+                <!-- STOP LOSS -->
+
+                <div class="project-card">
+
+                    <h3>
+                        Stop Loss
+                    </h3>
+
+                    <input
+                        type="number"
+                        id="stopLoss"
+                        placeholder="Enter Stop Loss"
+                    >
+
+                </div>
+
+
+
+                <!-- TARGET -->
+
+                <div class="project-card">
+
+                    <h3>
+                        Target
+                    </h3>
+
+                    <input
+                        type="number"
+                        id="targetPrice"
+                        placeholder="Enter Target"
+                    >
+
+                </div>
+
+
+
+                <!-- QUANTITY -->
+
+                <div class="project-card">
+
+                    <h3>
+                        Quantity
+                    </h3>
+
+                    <input
+                        type="number"
+                        id="quantity"
+                        placeholder="Enter Quantity"
+                    >
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <!-- CALCULATE RESULT -->
+
+            <div class="project-card paper-result">
+
+
+                <button
+                    class="btn"
+                    onclick="calculateTrade()"
+                >
+                    Calculate Trade
+                </button>
+
+
+
+                <button
+                    class="btn"
+                    onclick="addTrade()"
+                >
+                    Add Trade to Journal
+                </button>
+
+
+
+                <div id="tradeResult">
+
+                    Enter your trade details.
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+        <!-- =========================================
+             PAPER POSITIONS
+        ========================================= -->
+
+        <section class="technology-section">
+
+
+            <div class="section-title">
+
+                <h2>
+                    Paper Positions
+                </h2>
+
+                <p>
+                    Your simulated trades and P&L
+                </p>
+
+            </div>
+
+
+
+
+            <!-- P&L SUMMARY -->
+
+            <div class="pnl-summary">
+
+
+                <!-- TOTAL INVESTMENT -->
+
+                <div class="pnl-card">
+
+                    <h3>
+                        Total Investment
+                    </h3>
+
+                    <h2 id="totalInvestment">
+                        ₹0
+                    </h2>
+
+                </div>
+
+
+
+                <!-- TOTAL P&L -->
+
+                <div class="pnl-card">
+
+                    <h3>
+                        Total P&L
+                    </h3>
+
+                    <h2 id="totalPnL">
+                        ₹0
+                    </h2>
+
+                </div>
+
+
+
+                <!-- WINNING TRADES -->
+
+                <div class="pnl-card">
+
+                    <h3>
+                        Winning Trades
+                    </h3>
+
+                    <h2 id="winningTrades">
+                        0
+                    </h2>
+
+                </div>
+
+
+
+                <!-- LOSING TRADES -->
+
+                <div class="pnl-card">
+
+                    <h3>
+                        Losing Trades
+                    </h3>
+
+                    <h2 id="losingTrades">
+                        0
+                    </h2>
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <!-- POSITIONS TABLE -->
+
+            <div id="positionsContainer">
+
+
+                <table class="trade-table">
+
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Stock
+                            </th>
+
+                            <th>
+                                Type
+                            </th>
+
+                            <th>
+                                Entry
+                            </th>
+
+                            <th>
+                                SL
+                            </th>
+
+                            <th>
+                                Target
+                            </th>
+
+                            <th>
+                                Qty
+                            </th>
+
+                            <th>
+                                Current Price
+                            </th>
+
+                            <th>
+                                Risk
+                            </th>
+
+                            <th>
+                                Reward
+                            </th>
+
+                            <th>
+                                P&L
+                            </th>
+
+                            <th>
+                                R:R
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+
+                    <tbody id="tradeTableBody">
+
+                    </tbody>
+
+
+                </table>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================= -->
+
+    <footer>
+
+        © 2026 Anil Nagane | Trading & Finance Analytics Dashboard
+
+    </footer>
+
+
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================= -->
+
+    <script src="trading.js"></script>
+
+
+</body>
+
+</html>
